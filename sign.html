@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ 
+    <style>
+    body{
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: soft-light,normal,multiply;
+      
+    }
+ #form {
+    width:50%;
+    /* You can remove the borders, when doing 3D stylings
+    border: 2px solid black;*/
+    padding: 10px 10px 10px 10px;
+    margin:  auto;
+    box-shadow: 0px 9px 13px 5px;
+    border-radius: 5px;
+    margin-top: 50px;
+     margin-bottom: 50px;
+}
+
+#form input {
+    width: 100%;
+    border-radius: 5px;
+    height: 25px;
+    background-color:#dad7e2 ;
+    font-family: cursive; 
+    font-weight: bold;
+}
+
+
+
+#form input:hover {
+    background: white;
+}
+
+#form #Sign {
+    height: 30px;
+    background: blue;
+    width: 30%;
+    color: #fff;
+}
+
+#form #Sign:hover {
+    background: white;
+    color: blue;
+    font-weight: bold;
+}
+
+#form #log {
+    height: 30px;
+    background: blue;
+    color: #fff;
+    border-radius: 5px;
+    font-family: cursive; 
+   
+}
+
+#form #log:hover {
+    background: white;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+    </style> 
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+               
+            <a href="index.html"><img src="cart.png" width="50px" height="30px" class="logo"></a>
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa fa-shopping-basket"></i>cart</a></li>
+                <li><a href="sign.html">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+    
+     <div class="row" align="center">
+        <div class="col-sm-12">
+            <div id="form">
+                
+                <form method="post" action="process.php">
+                    
+                    <p>
+                    <label for="name" style="font-family: cursive; color: blue; font-weight: bold;">First Name:</label>
+                    <input type="text" name="first_name" placeholder="Your First Name" required>
+                    </p>
+                    
+                      <p>
+                    <label for="name" style="font-family: cursive; color: blue; font-weight: bold;">Last Name:</label>
+                    <input type="text" name="email" placeholder="Last Name" required>
+                    </p>
+                    
+                    
+                    <p>
+                    <label for="name" style="font-family: cursive; color: blue; font-weight: bold;">Phone:</label>
+                    <input type="text" name="phone" placeholder="Your Phone" required>
+                    </p>
+                    
+                    <p>
+                    <label for="name" style="font-family: cursive; color: blue; font-weight: bold;">Email:</label>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    </p>
+                    
+                     <p>
+                    <label for="name" style="font-family: cursive; color: blue; font-weight: bold;">Address:</label>
+                    <input type="text" name="email" placeholder="Your Address" required>
+                    </p>
+                    
+                    <p>
+                        <input id="Sign" type="submit" name="submit" value="Sign Up">
+                    </p>
+                    
+                    <p>
+                        <b>Already have an account? </b></p>
+                       <a id="log" href="log.html"  style="margin-left: 10px; margin-right: 10px;"><b>Log In</b></a>
+                    
+                 
+                </form>
+        
+        </div>
+         </div> 
+        </div> 
+    </body>
+</html>
